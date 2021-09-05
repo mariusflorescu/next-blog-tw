@@ -14,14 +14,28 @@ const Home: NextPage = () => {
         Change Theme
       </button>
 
-        <h2 className='text-3xl font-semibold'>Hi there 👋🏼, I&apos;m Marius</h2>
-        <p className='font-medium flex items-center py-2'>
-            Definitely not a
+        <h2 className='text-5xl font-semibold'>marius</h2>
+        <h4 className='text-2xl font-medium bg-clip-text text-transparent dark:text-transparent bg-gradient-to-r from-yellow-500 dark:from-yellow-400 via-purple-500 to-blue-700'>learning by building.</h4>
+
+        <div className='my-6 h-0 w-full border-b border-gray-300 dark:border-gray-700'/>
+
+        <p className='font-medium text-lg flex items-center py-2'>
+            definitely not a
             <span className='animate-bounce px-2 bg-clip-text text-transparent dark:text-transparent bg-gradient-to-r from-purple-500 dark:from-purple-400 via-pink-500 to-red-600'>fullstack developer</span>
             and
             <span className='animate-bounce px-2 bg-clip-text text-transparent dark:text-transparent bg-gradient-to-r from-green-600 dark:from-green-500 to-blue-500'>student</span>
-            .
         </p>
+        <p className='py-1'>
+            young, driven by my passion and love for technology
+        </p>
+        <p>
+            ambitious with a tendency to perfectionism
+        </p>
+        <p>
+            positive mindset accompanied by a can-do attitude
+        </p>
+
+        <h6 className='font-medium pt-12 text-gray-700 dark:text-gray-400'>fullstack dev @ victory square partners.</h6>
     </div>
   )
 }
