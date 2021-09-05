@@ -136,6 +136,7 @@ const CommandMenu = () => {
 
                                 <Category name='social'/>
                                 <div
+                                    onClick={() => window.open('https://github.com/mariusflorescu', '_blank')}
                                     className='flex items-center justify-between transition-all cursor-pointer py-2 px-12 hover:bg-gray-50 dark:hover:bg-gray-800 group'>
                                     <div className='flex items-center gap-3'>
                                         <svg className='w-5 h-5 fill-current text-white' viewBox="0 0 256 250" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
@@ -151,6 +152,7 @@ const CommandMenu = () => {
                                 </div>
 
                                 <div
+                                    onClick={() => window.open('https://www.linkedin.com/in/marius-adrian-florescu-141aaa209/', '_blank')}
                                     className='flex items-center justify-between transition-all cursor-pointer py-2 px-12 hover:bg-gray-50 dark:hover:bg-gray-800 group'>
                                     <div className='flex items-center gap-3'>
                                         <svg className='w-5 h-5' viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
