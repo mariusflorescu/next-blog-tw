@@ -1,8 +1,12 @@
-
+import Logo from './Logo'
 
 const Nav = () => {
     return (
-        <h1>Hello</h1>
+        <div className='w-full flex justify-between items-center py-8'>
+            <Logo/>
+
+            <span>Hello</span>
+        </div>
     )
 }
 
