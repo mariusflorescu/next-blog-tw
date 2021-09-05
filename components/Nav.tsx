@@ -5,7 +5,7 @@ const Nav = () => {
         <div className='w-full flex justify-between items-center py-8'>
             <Logo/>
 
-            <span>Hello</span>
+            <span>Command</span>
         </div>
     )
 }
