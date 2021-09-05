@@ -19,12 +19,12 @@ const Home: NextPage = () => {
 
         <div className='my-6 h-0 w-full border-b border-gray-300 dark:border-gray-700'/>
 
-        <p className='font-medium text-lg flex items-center py-2'>
-            definitely not a
-            <span className='animate-bounce px-2 bg-clip-text text-transparent dark:text-transparent bg-gradient-to-r from-purple-500 dark:from-purple-400 via-pink-500 to-red-600'>fullstack developer</span>
-            and
-            <span className='animate-bounce px-2 bg-clip-text text-transparent dark:text-transparent bg-gradient-to-r from-green-600 dark:from-green-500 to-blue-500'>student</span>
-        </p>
+        <div className='flex items-center flex-wrap font-medium text-lg flex items-center'>
+            <p>definitely not a</p>&nbsp;
+            <span className='animate-bounce bg-clip-text text-transparent dark:text-transparent bg-gradient-to-r from-purple-500 dark:from-purple-400 via-pink-500 to-red-600'>fullstack developer</span>&nbsp;
+            <p>and</p>&nbsp;
+            <span className='animate-bounce bg-clip-text text-transparent dark:text-transparent bg-gradient-to-r from-green-600 dark:from-green-500 to-blue-500'>student</span>
+        </div>
         <p className='py-1'>
             young, driven by my passion and love for technology
         </p>
