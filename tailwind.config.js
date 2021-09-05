@@ -25,7 +25,9 @@ module.exports = {
     }
   },
   variants: {
-    extend: {},
+    extend: {
+      bgOpacity: ['group-hover']
+    },
   },
   plugins: [
     function({addComponents}){
