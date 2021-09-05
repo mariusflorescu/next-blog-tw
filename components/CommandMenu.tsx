@@ -62,7 +62,7 @@ const CommandMenu = () => {
             <Transition appear show={open} as={Fragment}>
                 <Dialog
                     as="div"
-                    className="fixed inset-0 z-10 overflow-y-auto"
+                    className="fixed inset-0 z-10"
                     onClose={closeModal}
                 >
                     <div className="min-h-screen px-4 text-center">
