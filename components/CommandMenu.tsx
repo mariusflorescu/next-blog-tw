@@ -75,7 +75,7 @@ const CommandMenu = () => {
                             leaveFrom="opacity-100"
                             leaveTo="opacity-0"
                         >
-                            <Dialog.Overlay className="fixed inset-0 bg-black/10"/>
+                            <Dialog.Overlay className="fixed inset-0 bg-black/10 dark:bg-white/5"/>
                         </Transition.Child>
 
                         <span
@@ -93,9 +93,9 @@ const CommandMenu = () => {
                             leaveFrom="opacity-100 scale-100"
                             leaveTo="opacity-0 scale-95"
                         >
-                            <div className="inline-block w-full max-w-md my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl dark:bg-gray-800">
+                            <div className="inline-block w-full max-w-md my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl dark:bg-gray-900">
                                 <Dialog.Title className="px-6 py-4 border-b border-gray-200 dark:border-gray-700 text-lg font-semibold">
-                                    Command menu
+                                    command menu
                                 </Dialog.Title>
 
                                 <Category name='theme'/>
@@ -106,7 +106,7 @@ const CommandMenu = () => {
                                             setTheme(theme === 'light' ? 'dark' : 'light')
                                         },300)
                                     }}
-                                    className='flex items-center justify-between transition-all cursor-pointer py-2 px-12 hover:bg-gray-100 dark:hover:bg-gray-900 group'>
+                                    className='flex items-center justify-between transition-all cursor-pointer py-2 px-12 hover:bg-gray-100 dark:hover:bg-gray-800 group'>
                                     <span>
                                         switch theme
                                     </span>
@@ -117,14 +117,14 @@ const CommandMenu = () => {
 
                                 <Category name='navigation'/>
                                 <div
-                                    className='flex items-center justify-between transition-all cursor-pointer py-2 px-12 hover:bg-gray-50 dark:hover:bg-gray-900 group'>
+                                    className='flex items-center justify-between transition-all cursor-pointer py-2 px-12 hover:bg-gray-50 dark:hover:bg-gray-800 group'>
                                     <span>home</span>
                                     <span className='py-1 px-2 font-mono rounded bg-gray-100 dark:bg-gray-700 group-hover:bg-white dark:group-hover:bg-gray-800'>
                                         G+H
                                     </span>
                                 </div>
                                 <div
-                                    className='flex items-center justify-between transition-all cursor-pointer py-2 px-12 hover:bg-gray-100 dark:hover:bg-gray-900 group border-t border-transparent hover:border-white dark:hover:border-gray-800'>
+                                    className='flex items-center justify-between transition-all cursor-pointer py-2 px-12 hover:bg-gray-50 dark:hover:bg-gray-800 group'>
                                     <span>blog</span>
                                     <span className='py-1 px-2 font-mono rounded bg-gray-100 dark:bg-gray-700 group-hover:bg-white dark:group-hover:bg-gray-800'>
                                         G+B
