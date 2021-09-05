@@ -5,15 +5,6 @@ const Home: NextPage = () => {
   const {theme, setTheme} = useTheme();
   return (
     <div>
-      <button
-          className="m-16 px-4 py-2 text-white dark:text-black bg-black dark:bg-white font-semibold rounded-md"
-          onClick={() => {
-            setTheme(theme === 'light' ? 'dark' : 'light')
-          }}
-      >
-        Change Theme
-      </button>
-
         <h2 className='text-5xl font-semibold'>marius</h2>
         <h4 className='text-2xl font-medium bg-clip-text text-transparent dark:text-transparent bg-gradient-to-r from-yellow-500 dark:from-yellow-400 via-purple-500 to-blue-700'>learning by building.</h4>
 

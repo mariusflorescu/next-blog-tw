@@ -1,5 +1,6 @@
 import React, {Fragment, useState} from 'react'
 import {Dialog, Transition} from '@headlessui/react'
+import {useTheme} from "next-themes";
 
 const Category : React.FC<{name: string}> = ({name}) => {
     return (
@@ -10,6 +11,8 @@ const Category : React.FC<{name: string}> = ({name}) => {
 }
 
 const CommandMenu = () => {
+    const {theme, setTheme} = useTheme();
+
     const [open, setOpen] = useState(false)
     const [search,setSearch] = useState('')
 
@@ -77,8 +80,16 @@ const CommandMenu = () => {
                                         placeholder='search...'
                                     />
                                 </Dialog.Title>
+
                                 <Category name='Theme'/>
-                                <div className='flex items-center justify-between transition-all cursor-pointer py-2 px-12 hover:bg-gray-100 dark:hover:bg-gray-700 group border-t border-transparent hover:border-white dark:hover:border-gray-800'>
+                                <div
+                                    onClick={() => {
+                                        closeModal()
+                                        setTimeout(() => {
+                                            setTheme(theme === 'light' ? 'dark' : 'light')
+                                        },300)
+                                    }}
+                                    className='flex items-center justify-between transition-all cursor-pointer py-2 px-12 hover:bg-gray-100 dark:hover:bg-gray-900 group border-t border-transparent hover:border-white dark:hover:border-gray-800'>
                                     <span>
                                         Switch theme
                                     </span>
@@ -86,6 +97,24 @@ const CommandMenu = () => {
                                         T
                                     </span>
                                 </div>
+                                <div className='flex items-center justify-between transition-all cursor-pointer py-2 px-12 hover:bg-gray-100 dark:hover:bg-gray-900 group border-t border-transparent hover:border-white dark:hover:border-gray-800'>
+                                    <span>
+                                        Switch theme
+                                    </span>
+                                    <span className='py-1 px-2 font-mono rounded bg-gray-100 dark:bg-gray-700 group-hover:bg-white dark:group-hover:bg-gray-800'>
+                                        T
+                                    </span>
+                                </div>
+                                <div className='flex items-center justify-between transition-all cursor-pointer py-2 px-12 hover:bg-gray-100 dark:hover:bg-gray-900 group border-t border-transparent hover:border-white dark:hover:border-gray-800'>
+                                    <span>
+                                        Switch theme
+                                    </span>
+                                    <span className='py-1 px-2 font-mono rounded bg-gray-100 dark:bg-gray-700 group-hover:bg-white dark:group-hover:bg-gray-800'>
+                                        T
+                                    </span>
+                                </div>
+
+
                             </div>
                         </Transition.Child>
                     </div>
