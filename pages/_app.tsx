@@ -5,7 +5,9 @@ import '../styles/globals.css'
 function MyApp({ Component, pageProps }: AppProps) {
   return (
       <ThemeProvider forcedTheme={Component.theme || undefined} attribute="class">
-        <Component {...pageProps} />
+        <div className='container mx-auto px-2'>
+            <Component {...pageProps} />
+        </div>
       </ThemeProvider>
   )
 }
