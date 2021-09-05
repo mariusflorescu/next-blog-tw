@@ -29,7 +29,7 @@ const CommandMenu = () => {
     const keymaps = useMemo(() => {
         return {
             //switch theme
-            's t': () => setTheme(theme === 'light' ? 'dark' : 'light'),
+            't': () => setTheme(theme === 'light' ? 'dark' : 'light'),
             //local nav
             'g h': () => router.push('/'),
             'g b': () => router.push('/blog')
@@ -111,7 +111,7 @@ const CommandMenu = () => {
                                         switch theme
                                     </span>
                                     <span className='py-1 px-2 font-mono rounded bg-gray-100 dark:bg-gray-700 group-hover:bg-white dark:group-hover:bg-gray-800'>
-                                        S+T
+                                        T
                                     </span>
                                 </div>
 
