@@ -13,6 +13,8 @@ const Home: NextPage = () => {
       >
         Change Theme
       </button>
+
+        <p>Hello this is a test paragraph</p>
     </div>
   )
 }
