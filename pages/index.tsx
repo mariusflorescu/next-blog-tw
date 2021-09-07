@@ -2,7 +2,6 @@ import type { NextPage } from 'next'
 import { useTheme } from 'next-themes'
 
 const Home: NextPage = () => {
-  const {theme, setTheme} = useTheme();
   return (
     <div>
         <h2 className='text-5xl font-semibold'>marius</h2>
