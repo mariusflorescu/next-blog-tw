@@ -1,8 +1,11 @@
 import type { NextPage } from 'next'
+import Meta from "../components/Meta";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <>
+        <Meta title='Marius Florescu' description='learning by building'/>
+
         <h2 className='text-5xl font-semibold'>marius</h2>
         <h4 className='text-2xl font-medium bg-clip-text text-transparent dark:text-transparent bg-gradient-to-r from-yellow-500 dark:from-yellow-400 via-purple-500 to-blue-700'>learning by building.</h4>
 
@@ -25,7 +28,7 @@ const Home: NextPage = () => {
         </p>
 
         <h6 className='font-medium pt-12 text-gray-700 dark:text-gray-400'>fullstack dev @ victory square partners.</h6>
-    </div>
+    </>
   )
 }
 
