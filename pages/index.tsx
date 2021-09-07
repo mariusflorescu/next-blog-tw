@@ -6,10 +6,11 @@ const Home: NextPage = () => {
     <>
         <Meta title='Marius Florescu' description='learning by building'/>
 
-        <h2 className='text-5xl font-semibold'>marius</h2>
-        <h4 className='text-2xl font-medium bg-clip-text text-transparent dark:text-transparent bg-gradient-to-r from-yellow-500 dark:from-yellow-400 via-purple-500 dark:via-purple-500 to-blue-700 dark:to-blue-700'>learning by building.</h4>
-
-        <div className='my-6 h-0 w-full border-b border-gray-300 dark:border-gray-700'/>
+        <span className='group'>
+            <h2 className='text-5xl font-semibold transition transform duration-300 group-hover:-translate-y-2'>marius</h2>
+            <h4 className='text-2xl font-medium bg-clip-text text-transparent dark:text-transparent bg-gradient-to-r from-yellow-500 dark:from-yellow-400 via-purple-500 dark:via-purple-500 to-blue-700 dark:to-blue-700 transition duration-300 group-hover:scale-125 group-hover:translate-x-24'>learning by building.</h4>
+            <div className='my-6 h-0 w-full border-b border-gray-300 dark:border-gray-700 transition-all duration-300 group-hover:my-8'/>
+        </span>
 
         <div className='flex items-center flex-wrap font-medium text-lg flex items-center'>
             <p>definitely not a</p>&nbsp;

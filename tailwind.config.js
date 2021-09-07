@@ -26,7 +26,8 @@ module.exports = {
   },
   variants: {
     extend: {
-      bgOpacity: ['group-hover']
+      bgOpacity: ['group-hover'],
+      padding: ['group-hover']
     },
   },
   plugins: [
