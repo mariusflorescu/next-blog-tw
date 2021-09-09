@@ -8,5 +8,6 @@ export type Post = {
     title: string,
     publishedAt: string,
     description: string,
-    tag: Tags
+    tag: Tags,
+    slug: string
 }

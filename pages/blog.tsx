@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Link from 'next/link'
 import React from 'react'
 import {Post} from '../types'
 import Meta from "../components/Meta";
@@ -24,7 +25,7 @@ const Blog : React.FC<IBlog> = ({posts}) => {
 }
 
 export const getStaticProps = async () => {
-    const posts = await getAllFilesFrontMatter()
+    const posts = getAllFilesFrontMatter()
 
     return {props: {posts}}
 }
