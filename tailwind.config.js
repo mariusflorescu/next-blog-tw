@@ -22,6 +22,7 @@ module.exports = {
       blue: colors.blue,
       green: colors.green,
       yellow: colors.yellow,
+      teal: colors.teal
     }
   },
   variants: {

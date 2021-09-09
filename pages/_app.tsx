@@ -2,6 +2,7 @@ import type { AppProps } from 'next/app'
 import { MDXProvider } from '@mdx-js/react'
 import { ThemeProvider } from "next-themes"
 import '../styles/globals.css'
+import '../styles/prism.css'
 import Nav from "../components/Nav";
 import MDXComponents from "../components/MDXComponents";
 

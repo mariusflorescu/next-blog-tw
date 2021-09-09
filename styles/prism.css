@@ -1,0 +1,92 @@
+/**
+ * CSS Styles for code highlighting.
+ * Feel free to customize token styles
+ * by copying from a prismjs compatible theme:
+ * https://github.com/PrismJS/prism-themes
+ */
+
+/* Code title styles */
+.remark-code-title {
+    @apply p-3 font-mono text-sm font-bold text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-gray-800 rounded-t;
+}
+
+.remark-code-title + pre {
+    @apply pt-1 rounded-t-none px-2 border border-gray-100 dark:border-gray-800 rounded-b;
+}
+
+/* Code block styles */
+.code-highlight {
+    @apply float-left min-w-full;
+}
+
+.code-line {
+    @apply block pl-4 pr-4 -mx-4 border-l-4 border-gray-100;
+}
+
+.highlight-line {
+    @apply -mx-4 bg-gray-700 bg-opacity-50 border-l-4 border-gray-100;
+}
+
+.line-number::before {
+    @apply pr-4 -ml-2 text-gray-400;
+    content: attr(line);
+}
+
+/*Token styles made by me, kinda ugly ngl */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    @apply text-gray-400 dark:text-gray-500;
+}
+
+.token.punctuation {
+    @apply text-teal-500;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+    @apply text-blue-500 dark:text-blue-300;
+}
+
+.token.selector,
+.token.attr-name,
+.token.builtin,
+.token.inserted {
+    @apply text-yellow-500 dark:text-yellow-400;
+}
+
+.token.string,
+.token.char {
+    color: #49c6ec;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+    @apply text-teal-500;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+    @apply text-purple-500 dark:text-purple-300;
+}
+
+.token.function,
+.token.class-name {
+    @apply text-blue-500 dark:text-blue-300;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+    @apply text-purple-500 dark:text-purple-300;
+}

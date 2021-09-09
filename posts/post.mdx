@@ -20,10 +20,33 @@ Hello guys
 Hello
 
 [Hello](/home)
-```typescript:test.ts
+
+```typescript:test.tsx
+//example comment
 interface IProps{
     title:string
     description:string
+}
+
+const Component : React.FC<IProps> = ({title,description}) => {
+    const [bla,setBla] = useState(false)
+    const router = useRouter()
+
+    useEffect(() => {
+        if(router.pathname === 'test')
+            setBla(true)
+    },[bla])
+
+    return (
+        <h1>{title}</h1>
+        <h2>{description}</h2>
+    )
+}
+```
+
+```css:file.css
+.button {
+    background-color: #ffffff !important;
 }
 ```
 
