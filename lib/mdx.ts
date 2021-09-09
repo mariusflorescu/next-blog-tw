@@ -11,7 +11,7 @@ export const getPosts = () => {
 export const getAllFilesFrontMatter = () => {
     const files = getPosts();
 
-    return files.reduce((allPosts:any, postSlug:any) => {
+    return files.reduce((allPosts:unknown[], postSlug:string) => {
         const source = fs.readFileSync(path.join(root, 'posts', postSlug))
         const {data} = matter(source)
 
