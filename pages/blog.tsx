@@ -1,15 +1,24 @@
 import type { NextPage } from 'next'
-import React, {useState} from 'react'
+import React from 'react'
+import {Post} from '../types'
 import Meta from "../components/Meta";
 import {getAllFilesFrontMatter} from "../lib/mdx";
+import PostCardDetails from "../components/PostCardDetails";
 
-const Blog : React.FC<{posts: any}> = ({posts}) => {
+interface IBlog {
+    posts: Post[]
+}
+
+const Blog : React.FC<IBlog> = ({posts}) => {
     return (
         <>
             <Meta title='Blog' description='My blog...'/>
-            {React.Children.toArray(posts.map((post:any) => (
-                <span className='text-green-500 dark:text-green-500'>{post.title} {post.description} {post.tag}</span>
-            )))}
+            <div className='space-y-5'>
+                {React.Children.toArray(posts.map((post:Post) => (
+                    // eslint-disable-next-line react/jsx-key
+                    <PostCardDetails post={post}/>
+                )))}
+            </div>
         </>
     )
 }
