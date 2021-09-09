@@ -11,13 +11,17 @@
   "dependencies": {
     "@headlessui/react": "^1.4.1",
     "@mdx-js/loader": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
     "@next/mdx": "^11.1.2",
     "colist": "^0.0.3",
+    "gray-matter": "^4.0.3",
     "next": "11.1.2",
     "next-seo": "^4.26.0",
     "next-themes": "^0.0.15",
+    "prism-react-renderer": "^1.2.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "reading-time": "^1.4.0",
     "tinykeys": "^1.2.0"
   },
   "devDependencies": {

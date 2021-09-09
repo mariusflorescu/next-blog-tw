@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
-import mdx from '@next/mdx'
-const withMDX = mdx({
+const withMDX = require('@next/mdx')({
   extension: /\.mdx$/
 })
 
