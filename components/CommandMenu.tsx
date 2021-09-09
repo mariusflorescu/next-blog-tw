@@ -1,4 +1,5 @@
 import React, {Fragment, useState, useEffect, useMemo} from 'react'
+import Link from 'next/link'
 import {useRouter} from "next/router";
 import {Dialog, Transition} from '@headlessui/react'
 import {useTheme} from "next-themes";
@@ -51,6 +52,10 @@ const CommandMenu = () => {
             subs.forEach(sub => sub())
         }
     })
+
+    useEffect(() => {
+        setOpen(false);
+    },[router.pathname])
 
     return (
         <>
@@ -120,20 +125,24 @@ const CommandMenu = () => {
                                     </div>
 
                                     <Category name='navigation'/>
-                                    <div
-                                        className='font-mono text-sm flex items-center justify-between transition-all cursor-pointer py-2 px-12 hover:bg-gray-50 dark:hover:bg-gray-800 group'>
-                                        <span>home</span>
-                                        <span className='py-1 px-2 font-mono rounded bg-gray-100 dark:bg-gray-700 group-hover:bg-white dark:group-hover:bg-gray-900'>
+                                    <Link href='/' passHref>
+                                        <div
+                                            className='font-mono text-sm flex items-center justify-between transition-all cursor-pointer py-2 px-12 hover:bg-gray-50 dark:hover:bg-gray-800 group'>
+                                            <span>home</span>
+                                            <span className='py-1 px-2 font-mono rounded bg-gray-100 dark:bg-gray-700 group-hover:bg-white dark:group-hover:bg-gray-900'>
                                         G+H
-                                    </span>
-                                    </div>
-                                    <div
-                                        className='font-mono text-sm flex items-center justify-between transition-all cursor-pointer py-2 px-12 hover:bg-gray-50 dark:hover:bg-gray-800 group'>
-                                        <span>blog</span>
-                                        <span className='py-1 px-2 font-mono rounded bg-gray-100 dark:bg-gray-700 group-hover:bg-white dark:group-hover:bg-gray-900'>
-                                        G+B
-                                    </span>
-                                    </div>
+                                        </span>
+                                        </div>
+                                    </Link>
+                                    <Link href='/blog' passHref>
+                                        <div
+                                            className='font-mono text-sm flex items-center justify-between transition-all cursor-pointer py-2 px-12 hover:bg-gray-50 dark:hover:bg-gray-800 group'>
+                                            <span>blog</span>
+                                            <span className='py-1 px-2 font-mono rounded bg-gray-100 dark:bg-gray-700 group-hover:bg-white dark:group-hover:bg-gray-900'>
+                                                G+B
+                                            </span>
+                                        </div>
+                                    </Link>
 
                                     <Category name='social'/>
                                     <div
