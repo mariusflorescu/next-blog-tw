@@ -12,7 +12,7 @@ export const getAllFilesFrontMatter = () => {
     const files = getPosts();
 
     return files.reduce((allPosts:unknown[], postSlug:string) => {
-        const source = fs.readFileSync(path.join(root, 'posts', postSlug))
+        const source = fs.readFileSync(path.join(root, 'posts', postSlug), 'utf8')
         const {data} = matter(source)
 
         return [
