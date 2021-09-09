@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.4.1",
+    "@mdx-js/loader": "^1.6.22",
+    "@next/mdx": "^11.1.2",
     "colist": "^0.0.3",
     "next": "11.1.2",
     "next-seo": "^4.26.0",
