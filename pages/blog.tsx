@@ -12,7 +12,7 @@ interface IBlog {
 const Blog : React.FC<IBlog> = ({posts}) => {
     return (
         <>
-            <Meta title='Blog' description='My blog...'/>
+            <Meta title='Blog | Marius Florescu' description='My blog...'/>
             <div className='space-y-5'>
                 {React.Children.toArray(posts.map((post:Post) => (
                     // eslint-disable-next-line react/jsx-key
