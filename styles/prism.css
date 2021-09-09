@@ -7,11 +7,11 @@
 
 /* Code title styles */
 .remark-code-title {
-    @apply p-3 font-mono text-sm font-bold text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-gray-800 rounded-t;
+    @apply w-full p-3 font-mono text-sm font-bold text-gray-700 dark:text-gray-300 bg-gray-100 dark:bg-gray-800 rounded-t;
 }
 
 .remark-code-title + pre {
-    @apply pt-1 rounded-t-none px-2 border border-gray-100 dark:border-gray-800 rounded-b;
+    @apply w-full pt-1 rounded-t-none px-2 border border-gray-100 dark:border-gray-800 rounded-b overflow-x-scroll;
 }
 
 /* Code block styles */
