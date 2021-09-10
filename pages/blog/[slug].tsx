@@ -1,9 +1,13 @@
+import Meta from "../../components/Meta";
 import { MDXRemote } from 'next-mdx-remote'
 import {getPosts, getPostBySlug} from "../../lib/mdx";
 
-const Blog = ({mdxSource} : any) => {
+const Blog = ({mdxSource, frontMatter} : any) => {
     return (
-        <MDXRemote {...mdxSource}/>
+        <>
+            <Meta title={frontMatter.title} description={frontMatter.description}/>
+            <MDXRemote {...mdxSource}/>
+        </>
     )
 }
 
