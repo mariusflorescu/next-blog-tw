@@ -1,11 +1,11 @@
 import React from 'react'
-import Meta from "../../components/Meta";
 import {MDXRemote, MDXRemoteSerializeResult} from 'next-mdx-remote'
-import {getPosts, getPostBySlug} from "../../lib/mdx";
 import {FrontMatter} from "../../types";
+import {getPosts, getPostBySlug} from "../../lib/mdx";
+import Meta from "../../components/Meta";
 
 interface IBlog {
-    mdxSource:MDXRemoteSerializeResult,
+    mdxSource: MDXRemoteSerializeResult,
     frontMatter: FrontMatter
 }
 
