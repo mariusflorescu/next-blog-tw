@@ -13,10 +13,9 @@ interface ITooltip {
 
 const Tooltip : React.FC<ITooltip> = ({children,side ,text}) => {
     const {theme} = useTheme()
-    const [open,setOpen] = useState(false);
 
     return (
-        <TooltipPrimitive.Root delayDuration={300} open={open} onOpenChange={(e) => setOpen(e)}>
+        <TooltipPrimitive.Root delayDuration={300}>
             <TooltipPrimitive.Trigger asChild>
                 {children}
             </TooltipPrimitive.Trigger>
