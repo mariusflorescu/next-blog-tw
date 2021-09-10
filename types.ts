@@ -11,3 +11,15 @@ export type Post = {
     tag: Tags,
     slug: string
 }
+
+type readingTime = {
+    text: string,
+    minutes: number,
+    time: number,
+    words: number
+}
+
+export type FrontMatter = {
+    wordCount: number,
+    readingTime: readingTime,
+} & Post

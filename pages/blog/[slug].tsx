@@ -1,8 +1,15 @@
+import React from 'react'
 import Meta from "../../components/Meta";
-import { MDXRemote } from 'next-mdx-remote'
+import {MDXRemote, MDXRemoteSerializeResult} from 'next-mdx-remote'
 import {getPosts, getPostBySlug} from "../../lib/mdx";
+import {FrontMatter} from "../../types";
 
-const Blog = ({mdxSource, frontMatter} : any) => {
+interface IBlog {
+    mdxSource:MDXRemoteSerializeResult,
+    frontMatter: FrontMatter
+}
+
+const Blog : React.FC<IBlog> = ({mdxSource, frontMatter}) => {
     return (
         <>
             <Meta title={frontMatter.title} description={frontMatter.description}/>
