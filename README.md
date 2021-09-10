@@ -1,3 +1,3 @@
 ## mariusflorescu.io
 
-in progress...
+pls set your expectations below the floor.
