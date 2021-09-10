@@ -4,6 +4,7 @@ import {MDXRemote, MDXRemoteSerializeResult} from 'next-mdx-remote'
 import {FrontMatter} from "../../types";
 import {getPosts, getPostBySlug} from "../../lib/mdx";
 import Meta from "../../components/Meta";
+import Tooltip from "../../components/Tooltip";
 
 interface IBlog {
     mdxSource: MDXRemoteSerializeResult,
@@ -19,9 +20,11 @@ const Blog : React.FC<IBlog> = ({mdxSource, frontMatter}) => {
     return (
         <>
             <Meta title={frontMatter.title} description={frontMatter.description}/>
-            <span className='text-lg font-semibold my-2 cursor-pointer p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800' onClick={(e) => router.push('/blog')}>
-                &larr;
-            </span>
+            <Tooltip side='top' text='go back'>
+                <span className='text-lg font-semibold my-2 cursor-pointer p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800' onClick={(e) => router.push('/blog')}>
+                    &larr;
+                </span>
+            </Tooltip>
             <div className='w-full flex justify-between items-center py-4'>
                 <h1 className='text-4xl font-semibold'>{frontMatter.title}</h1>
                 <small className='text-gray-500 dark:text-gray-500'>{frontMatter.readingTime.text}</small>
