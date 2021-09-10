@@ -4,6 +4,7 @@ import {useRouter} from "next/router";
 import {Dialog, Transition} from '@headlessui/react'
 import {useTheme} from "next-themes";
 import tinykeys from 'tinykeys'
+import Tooltip from "./Tooltip";
 
 const Category : React.FC<{name: string}> = ({name}) => {
     return (
@@ -59,13 +60,15 @@ const CommandMenu = () => {
 
     return (
         <>
-            <button
-                type="button"
-                onClick={openModal}
-                className="font-semibold text-3xl p-1 rounded hover:bg-gray-100 dark:hover:bg-gray-800 outline-none"
-            >
-                ⌘
-            </button>
+            <Tooltip text='command + k'>
+                <button
+                    type="button"
+                    onClick={openModal}
+                    className="font-semibold text-3xl p-1 rounded hover:bg-gray-100 dark:hover:bg-gray-800 outline-none"
+                >
+                    ⌘
+                </button>
+            </Tooltip>
 
             <Transition appear show={open} as={Fragment}>
                 <Dialog
