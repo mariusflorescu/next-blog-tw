@@ -9,6 +9,10 @@ interface IBlog {
     frontMatter: FrontMatter
 }
 
+interface IParams {
+    params: { slug: string }
+}
+
 const Blog : React.FC<IBlog> = ({mdxSource, frontMatter}) => {
     return (
         <>
@@ -31,7 +35,7 @@ export const getStaticPaths = () => {
     }
 }
 
-export const getStaticProps = async ({params} : any) => {
+export const getStaticProps = async ({params} : IParams) => {
     const post = await getPostBySlug(params.slug)
 
     return { props: post }
