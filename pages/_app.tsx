@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
       <ThemeProvider forcedTheme={undefined} attribute="class">
         <MDXProvider components={MDXComponents}>
-            <div className='container mx-auto px-2'>
+            <div className='container mx-auto px-2 overflow-x-hidden'>
                 <Nav/>
                 <Component {...pageProps} />
             </div>
