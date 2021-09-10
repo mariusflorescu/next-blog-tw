@@ -8,7 +8,12 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        roboto: ['Roboto Condensed', 'sans-serif'],
+        cabin: ['Cabin', 'sans-serif']
+      }
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',

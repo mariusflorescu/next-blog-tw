@@ -12,7 +12,7 @@ const PostCardDetails : React.FC<IPostCardDetails> = ({post}) => {
             <div className='group transition-all transform flex space-x-6 cursor-pointer hover:scale-[101%]'>
                 <h5 className='text-sm font-semibold py-2 text-gray-400 dark:text-gray-500'>{post.publishedAt}</h5>
                 <div>
-                    <h3 className='transition-colors font-medium text-2xl group-hover:text-gray-400 dark:group-hover:text-gray-500'>{post.title}</h3>
+                    <h3 className='transition-colors font-semibold text-gray-800 dark:text-gray-200 text-2xl group-hover:text-gray-400 dark:group-hover:text-gray-500'>{post.title}</h3>
                     <small className='font-xs'>in {post.tag}</small>
                     <p className='py-2 text-gray-700 dark:text-gray-300'>{post.description}</p>
                 </div>
