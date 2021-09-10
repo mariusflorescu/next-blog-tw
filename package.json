@@ -15,7 +15,6 @@
     "@next/mdx": "^11.1.2",
     "@radix-ui/react-tooltip": "^0.1.0",
     "@types/mdx-js__react": "^1.5.4",
-    "colist": "^0.0.3",
     "gray-matter": "^4.0.3",
     "mdx-prism": "^0.3.4",
     "next": "11.1.2",
