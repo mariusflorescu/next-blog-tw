@@ -20,7 +20,7 @@ const Blog : React.FC<IBlog> = ({mdxSource, frontMatter}) => {
     return (
         <>
             <Meta title={frontMatter.title} description={frontMatter.description}/>
-            <Tooltip side='top' text='go back'>
+            <Tooltip side='right' text='go back'>
                 <span className='text-lg font-semibold my-2 cursor-pointer p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800' onClick={(e) => router.push('/blog')}>
                     &larr;
                 </span>

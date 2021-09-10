@@ -60,7 +60,7 @@ const CommandMenu = () => {
 
     return (
         <>
-            <Tooltip text='command + k' side='bottom'>
+            <Tooltip text='command + k' side='left'>
                 <button
                     type="button"
                     onClick={openModal}
