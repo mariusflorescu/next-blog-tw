@@ -26,7 +26,8 @@ const Blog : React.FC<IBlog> = ({mdxSource, frontMatter}) => {
                 <h1 className='text-4xl font-semibold'>{frontMatter.title}</h1>
                 <small className='text-gray-500 dark:text-gray-500'>{frontMatter.readingTime.text}</small>
             </div>
-            <div className='py-4'>
+            <div className='border-b border-gray-100 dark:border-gray-800 my-2'/>
+            <div className='pt-2 pb-6'>
                 <MDXRemote {...mdxSource}/>
             </div>
         </>

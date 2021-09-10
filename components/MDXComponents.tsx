@@ -29,7 +29,7 @@ const linkMDX = (props:any) => {
 const inlineCodeMDX = (props:any) => <code className='p-1 bg-gray-100 dark:bg-gray-800 rounded-md text-sm' {...props}/>
 
 //quote
-const quoteMDX = (props:any) => <blockquote className='py-3 px-4 bg-gray-100 dark:bg-gray-800 rounded-lg italic tracking-widest' {...props}/>
+const quoteMDX = (props:any) => <blockquote className='my-2 py-3 px-4 bg-gray-100 dark:bg-gray-800 rounded-lg italic tracking-widest' {...props}/>
 
 //lists
 const ulMDX = (props:any) => <ul className='list-disc' {...props}/>
@@ -38,7 +38,7 @@ const liMDX = (props:any) => <li className='pb-1' {...props}/>
 
 //utils
 const brMDX = (props:any) => <div className='h-2' {...props}/>
-const hrMDX = (props:any) => <div className='border-b border-gray-300 dark:border-gray-700 my-2' {...props}/>
+const hrMDX = (props:any) => <div className='border-b border-gray-100 dark:border-gray-800 my-2' {...props}/>
 
 const MDXComponents = {
     //headings
