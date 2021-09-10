@@ -62,7 +62,7 @@ const CommandMenu = () => {
             <button
                 type="button"
                 onClick={openModal}
-                className="font-semibold text-3xl p-1 rounded hover:bg-gray-200 dark:hover:bg-gray-700 outline-none"
+                className="font-semibold text-3xl p-1 rounded hover:bg-gray-100 dark:hover:bg-gray-800 outline-none"
             >
                 ⌘
             </button>
