@@ -21,9 +21,9 @@ const Blog : React.FC<IBlog> = ({mdxSource, frontMatter}) => {
         <>
             <Meta title={frontMatter.title} description={frontMatter.description}/>
             <Tooltip side='right' text='go back'>
-                <span className='text-lg font-semibold my-2 cursor-pointer p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800' onClick={(e) => router.push('/blog')}>
+                <button className='bg-transparent text-lg font-semibold my-2 cursor-pointer p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-800' onClick={(e) => router.push('/blog')}>
                     &larr;
-                </span>
+                </button>
             </Tooltip>
             <div className='w-full flex justify-between items-center py-4'>
                 <h1 className='text-4xl font-semibold'>{frontMatter.title}</h1>
