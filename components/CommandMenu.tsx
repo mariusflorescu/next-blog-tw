@@ -67,7 +67,7 @@ const CommandMenu = () => {
       <Tooltip text="command + k" side="left">
         <span
           onClick={openModal}
-          className="cursor-pointer font-semibold text-3xl p-1 rounded hover:bg-gray-100 dark:hover:bg-gray-800 outline-none"
+          className="cursor-pointer bg-transparent font-semibold text-3xl p-1 rounded hover:bg-gray-100 dark:hover:bg-gray-800 outline-none"
         >
           ⌘
         </span>
